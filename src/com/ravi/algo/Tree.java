@@ -3,9 +3,9 @@ package com.ravi.algo;
 /**
  * Created by ravi on 6/20/2017.
  */
-public class Tree<I extends  Comparable> {
+public class Tree<I extends Comparable> {
 
-    public Tree<I> leftNode ;
+    public Tree<I> leftNode;
 
     public Tree<I> rightNode;
 
@@ -13,26 +13,32 @@ public class Tree<I extends  Comparable> {
 
     public I data;
 
-    public Tree(){
+    public Tree() {
 
 
     }
 
     public void inOrderTree(Tree tree) {
+        if(tree!=null)
+        {
+            inOrderTree(tree.leftNode);
+            System.out.println(tree.data);
+            inOrderTree(tree.rightNode);
+        }
 
     }
 
 
     public boolean addNode(I data) {
 
-        if(parent==null) {
+        if (parent == null) {
             parent = new Tree();
             parent.data = data;
-        }else {
-            if(data.compareTo(this.data)<0){
+        } else {
+            if (data.compareTo(parent.data) < 0) {
                 leftNode = new Tree();
                 leftNode.addNode(data);
-            }else if(data.compareTo(this.data)>0) {
+            } else if (data.compareTo(parent.data) > 0) {
                 rightNode = new Tree();
                 rightNode.addNode(data);
             }
@@ -40,4 +46,6 @@ public class Tree<I extends  Comparable> {
 
         return true;
     }
+
+
 }
