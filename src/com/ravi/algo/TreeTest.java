@@ -11,7 +11,13 @@ public class TreeTest {
 
         System.out.println("Jai Mata di !!");
 
+
         tree.addNode(5);
+        tree.addNode(1);
+        tree.addNode(3);
+        tree.addNode(5);
+        tree.inOrderTree(tree.parent);
+
 
 
     }
