@@ -7,18 +7,21 @@ public class TreeTest {
 
 
     public static void main(String[] args) {
-        Tree<Integer> tree = new Tree<>();
 
-        System.out.println("Jai Mata di !!");
+        int[] arr = {6,4,8,7,9,3,4,5,1,2};
 
+        Tree root=null;
+        boolean bRoot = true;
+        for (int num : arr){
+            if(bRoot){
+                bRoot = false;
+                root = new Tree(num);
+            } else {
+                root.addNode(num);
+            }
+        }
 
-        tree.addNode(5);
-        tree.addNode(1);
-        tree.addNode(3);
-        tree.addNode(5);
-        tree.inOrderTree(tree.parent);
-
-
+        root.inOrderTraversal(root);
 
     }
 
