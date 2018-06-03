@@ -12,7 +12,7 @@ public enum MyEnum {
     }
 
     public static void main(String[] args) {
-        MyEnum a = MyEnum.A;
+        //MyEnum a = MyEnum.A;
         //MyEnum b = MyEnum.A;
     }
 }
