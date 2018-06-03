@@ -43,7 +43,7 @@ public class Tree {
         if(root.left!=null)
             root.inOrderTraversal(root.left);
 
-        System.out.println(root.data);
+        System.out.print(root.data+ " ");
 
         if(root.right!=null)
             root.inOrderTraversal(root.right);

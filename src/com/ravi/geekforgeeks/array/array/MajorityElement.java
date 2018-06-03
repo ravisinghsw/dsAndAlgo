@@ -1,4 +1,4 @@
-package com.ravi.geekforgeeks.array;
+package com.ravi.geekforgeeks.array.array;
 
 /**
  * Majority Element: A majority element in an array A[] of size n is an element that appears more

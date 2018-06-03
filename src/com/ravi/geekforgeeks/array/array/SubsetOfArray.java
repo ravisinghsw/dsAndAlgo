@@ -1,4 +1,4 @@
-package com.ravi.geekforgeeks.array;
+package com.ravi.geekforgeeks.array.array;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 

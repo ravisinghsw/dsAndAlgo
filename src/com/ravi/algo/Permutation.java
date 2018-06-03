@@ -9,29 +9,30 @@ public class Permutation {
 
     public static void main(String[] args) {
         String input = "CAT";
-        permutate("CAT", 0 , input.length()-1);
+        int startIndex = 0;
+        int length = input.length()-1;
+        permutate("CAT", startIndex, length);
     }
 
-    private static void permutate(String input, int l, int r) {
-        if(l==r){
-            System.out.println(input);
+    private static void permutate(String input, int left, int right) {
+        if(left==right){
+            System.out.println("output"+input);
         } else {
-            for (int i=l ; i <input.length() ;i++){
-                input = swap(input , l , r);
-                permutate(input,l+1, r);
+            for (int i=left ; i <=right ;i++){
+                input = swap(input ,left , i);
+                System.out.println("intermediate "+input);
+                permutate(input,left+1, right);
+                input = swap(input ,left , i);
             }
         }
     }
 
      static  String swap(String str , int i , int j) {
-         char[] charStr = str.toCharArray();
-         char temp = charStr[i];
-         charStr[i]=charStr[j];
-         charStr[j]=temp;
-
-         String result = "";
-         for (char ch : charStr)
-             result = result + ch ;
-         return  result;
+         char temp;
+         char[] charArray = str.toCharArray();
+         temp = charArray[i] ;
+         charArray[i] = charArray[j];
+         charArray[j] = temp;
+         return String.valueOf(charArray);
       }
 }
