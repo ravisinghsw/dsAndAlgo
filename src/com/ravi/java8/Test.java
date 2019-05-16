@@ -2,17 +2,25 @@ package com.ravi.java8;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
 /**
  * Created by ravi on 11/5/2017.
  */
 public class Test {
 
     public static void main(String[] args) {
-        byte a = 4;
-        System.out.println(3*0.1);
-       if(3*0.1==0.3){
+        int a = 8;
+        System.out.println(a >> 16);
+        System.out.println(a >>> 2);
+      /* if(3*0.1==0.3){
            System.out.println("kjh");
-       }
+       }*/
+       Map<String,String> map= new HashMap<>();
+       map = new ConcurrentHashMap<>() ;
 
     }
    /*  private static void printNum(Integer a){
