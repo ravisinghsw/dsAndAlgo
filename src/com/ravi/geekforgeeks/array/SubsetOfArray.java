@@ -1,6 +1,4 @@
-package com.ravi.geekforgeeks.array.array;
-
-import com.sun.org.apache.xpath.internal.SourceTree;
+package com.ravi.geekforgeeks.array;
 
 /**
  * Created by ravi on 11/8/2017.

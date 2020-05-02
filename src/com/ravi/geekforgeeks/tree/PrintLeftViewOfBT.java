@@ -1,4 +1,4 @@
-package com.ravi.geekforgeeks.array.tree;
+package com.ravi.geekforgeeks.tree;
 
 /**
  * https://algorithms.tutorialhorizon.com/print-left-view-of-a-given-binary-tree/

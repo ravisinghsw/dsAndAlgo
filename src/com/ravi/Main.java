@@ -1,6 +1,13 @@
 package com.ravi;
 
-public class Main {
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class Main extends  RuntimeException{
+
+    Runtime a;
 
     static class Browser {
         public void go() {
@@ -18,8 +25,14 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        Browser b = new Firefox();
+        /*Browser b = new Firefox();
         IE e = (IE) b;
-        e.go();
+        e.go();*/
+
+
+        Object i = new ArrayList().iterator();
+        System.out.println(i instanceof List);
+        System.out.println(i instanceof Iterator);
+        System.out.println(i instanceof ListIterator);
     }
 }

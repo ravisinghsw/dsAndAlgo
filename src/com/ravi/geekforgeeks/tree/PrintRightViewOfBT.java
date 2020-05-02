@@ -1,4 +1,4 @@
-package com.ravi.geekforgeeks.array.tree;
+package com.ravi.geekforgeeks.tree;
 
 /**
  *https://www.geeksforgeeks.org/print-right-view-binary-tree-2/

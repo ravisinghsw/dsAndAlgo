@@ -1,4 +1,4 @@
-package com.ravi.geekforgeeks.array.array;
+package com.ravi.geekforgeeks.array;
 
 /**
  * Created by ravi on 7/3/2017.

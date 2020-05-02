@@ -1,4 +1,4 @@
-package com.ravi.geekforgeeks.array.array;
+package com.ravi.geekforgeeks.array;
 
 public class MaxSumInContinuesArray {
 
